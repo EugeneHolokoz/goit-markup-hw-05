@@ -262,6 +262,7 @@ img {
 }
 
 .backdrop.is-hidden .modal {
+    visibility: visible;
     transform: translate(-50%, -50%) translateY(-100%);
 }
 
@@ -382,6 +383,7 @@ img {
 
 .what-doing-img-desc-title {
     font-weight: 700;
+    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -462,6 +464,7 @@ img {
 
 .social-icon {
     fill: var(--icon-cl);
+    transition: fill var(--anim-fast);
 }
 
 .social-link:hover .social-icon,
@@ -626,7 +629,7 @@ img {
     cursor: pointer;
     background: var(--light-bcg-cl);
     border-radius: var(--btn-radius);
-    transition: background-color var(--anim-fast);
+    transition: background-color var(--anim-fast), color var(--anim-fast), box-shadow var(--anim-fast);
 }
 
 .section .btn:hover,
